@@ -57,24 +57,24 @@
   </a>
 </p>
 
-
 Disclaimer : Right now everything is saved to local storage since this is intended only for personal usage, you may fork it and extend it to connect with a cloud sync platform, that way you don't risk losing any saved data.
 
 ---
 
 ## ✨ Why Leetie?
 
-Last time I did leetcode we had working extensions which organized the leetcode problems based on company and frequency for free, but now those extensions have been taken down.  
+Last time I did leetcode we had working extensions which organized the leetcode problems based on company and frequency for free, but now those extensions have been taken down.
 
 So I just created this simple tool. I think this is better than the extension with my touch of 2 special features. A big thanks to [@liquidslr](https://github.com/liquidslr) for the problem sets and company data.
 
 These are the 2 special features which I love the most,
-  - write notes for every problem, with hidden notes for writing hints
-  - time every problem before solving and it will be saved so you know your past time. 
+
+- write notes for every problem, with hidden notes for writing hints
+- time every problem before solving and it will be saved so you know your past time.
 
 Yes just 2 features, but it makes the difference between hell and heaven for me.
 But more than what is now, I hope to build and improve with more features if required.
-(*read this ai description below if you would like to...*)
+(_read this ai description below if you would like to..._)
 Leetie focuses on **interview intelligence**:
 
 - company-wise interview trends
@@ -115,10 +115,9 @@ Designed for serious interview preparation with a clean, premium desktop-first w
 
 ---
 
-
 ## 🌐 Live Demo
 
-Coming soon via Vercel deployment.
+leetie-tool.vercel.app
 
 ---
 
@@ -136,7 +135,6 @@ cd Leetie
 ```bash
 npm install
 ```
-
 
 ### 3. Run development server
 
@@ -216,7 +214,7 @@ Leetie dynamically discovers companies, ranges, and datasets directly from the f
 
 ---
 
-##  Credits
+## Credits
 
 Leetie is built on top of the amazing **interview-company-wise-problems** dataset maintained by [@liquidslr](https://github.com/liquidslr).
 
@@ -266,7 +264,7 @@ Please keep the project JavaScript-only, follow existing architecture patterns, 
 
 ---
 
-## 🛣️ Roadmap 
+## 🛣️ Roadmap
 
 - [x] Company-wise filtering
 - [x] Persistent progress tracking
