@@ -27,9 +27,9 @@
 </h1>
 
 <p align="center">
-  <b>Open-source company-wise LeetCode intelligence dashboard.</b>
+  <b>An attempt to organize company wise problems for interview practice</b>
   <br />
-  Track interview trends, organize preparation, and build a smarter grinding workflow.
+  Track interview trends, filter by companies and frequency, your replacement for leetcode premium extension ? maybe!
 </p>
 
 <p align="center">
@@ -57,12 +57,24 @@
   </a>
 </p>
 
+
+Disclaimer : Right now everything is saved to local storage since this is intended only for personal usage, you may fork it and extend it to connect with a cloud sync platform, that way you don't risk losing any saved data.
+
 ---
 
 ## ✨ Why Leetie?
 
-Most LeetCode trackers focus only on solving problems.
+Last time I did leetcode we had working extensions which organized the leetcode problems based on company and frequency for free, but now those extensions have been taken down.  
 
+So I just created this simple tool. I think this is better than the extension with my touch of 2 special features. A big thanks to [@liquidslr](https://github.com/liquidslr) for the problem sets and company data.
+
+These are the 2 special features which I love the most,
+  - write notes for every problem, with hidden notes for writing hints
+  - time every problem before solving and it will be saved so you know your past time. 
+
+Yes just 2 features, but it makes the difference between hell and heaven for me.
+But more than what is now, I hope to build and improve with more features if required.
+(*read this ai description below if you would like to...*)
 Leetie focuses on **interview intelligence**:
 
 - company-wise interview trends
@@ -90,41 +102,19 @@ Designed for serious interview preparation with a clean, premium desktop-first w
   - Difficulty
   - Title
 - Multi-company comparison mode
-- Company autocomplete search
-- Problem title search
-- Difficulty filtering
-- Mark problems as completed
 - Completion date tracking
 - Star important problems
 - Persistent personal notes with hidden section
 - Timer + open LeetCode workflow
-- Pause/reset timers
-- Hide completed problems toggle
 - Starred-only mode
 - Tag reveal system (per-tag and global)
 - Dark / light theme with no flash
-- localStorage persistence across refreshes and browser restarts
 - Graceful handling for empty CSV datasets
 - Responsive desktop-first UI
 - Modular architecture for scalability
 
 ---
 
-## 🖼️ Preview
-
-### Dashboard
-
-![Dashboard](./public/screenshots/dashboard.png)
-
-### Filters & Search
-
-![Filters](./public/screenshots/filters.png)
-
-### Problem Workspace
-
-![Workspace](./public/screenshots/workspace.png)
-
----
 
 ## 🌐 Live Demo
 
@@ -132,7 +122,7 @@ Coming soon via Vercel deployment.
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Quick Start Guide (just clone repo, npm i, npm run dev)
 
 ### 1. Clone the repository
 
@@ -147,33 +137,8 @@ cd Leetie
 npm install
 ```
 
-### 3. Add the brain dataset
 
-Leetie reads problem data from `public/brain/`. Clone the upstream dataset and copy the folders:
-
-```bash
-git clone https://github.com/liquidslr/interview-company-wise-problems.git
-cp -r interview-company-wise-problems/* public/brain/
-```
-
-Expected structure:
-
-```txt
-public/
-  brain/
-    Google/
-      1. Thirty Days.csv
-      2. Three Months.csv
-      3. Six Months.csv
-      4. More Than Six Months.csv
-      5. All.csv
-    Amazon/
-      ...
-    Adobe/
-      ...
-```
-
-### 4. Run development server
+### 3. Run development server
 
 ```bash
 npm run dev
@@ -183,7 +148,7 @@ Open: `http://localhost:3000`
 
 ---
 
-## 📦 Production Build
+## For Production Build
 
 ```bash
 npm run build
@@ -192,7 +157,7 @@ npm start
 
 ---
 
-## 🏗️ Project Structure
+## (For Developers) Project Structure
 
 ```txt
 app/
@@ -226,7 +191,7 @@ lib/
 
 ---
 
-## 🧠 Architecture Highlights
+## 🧠 Architecture Highlights (read if you have patience ;)
 
 ### Composable Filtering Pipeline
 
@@ -251,7 +216,7 @@ Leetie dynamically discovers companies, ranges, and datasets directly from the f
 
 ---
 
-## 🙌 Credits
+##  Credits
 
 Leetie is built on top of the amazing **interview-company-wise-problems** dataset maintained by [@liquidslr](https://github.com/liquidslr).
 
@@ -261,7 +226,7 @@ Dataset repository: https://github.com/liquidslr/interview-company-wise-problems
 
 ---
 
-## 📄 Dataset / CSV Structure
+## 📄 Dataset / CSV Structure (For developers)
 
 ```csv
 Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
@@ -272,18 +237,18 @@ Leetie gracefully handles empty CSVs, malformed rows, missing values, and incons
 
 ---
 
-## 🤝 Contributing
+## Contributing Guide
 
 Contributions, issues, and feature requests are welcome. Check the [issues page](https://github.com/amitjomy007/Leetie/issues).
 
 Possible contribution areas:
 
 - new filters or sorting modes
-- performance optimization
+- performance optimization (highly welcome)
 - accessibility improvements
 - mobile polish
 - export/import support
-- analytics views
+- analytics views (highly welcome)
 - UI improvements
 - dataset tooling
 
@@ -301,7 +266,7 @@ Please keep the project JavaScript-only, follow existing architecture patterns, 
 
 ---
 
-## 🛣️ Roadmap
+## 🛣️ Roadmap 
 
 - [x] Company-wise filtering
 - [x] Persistent progress tracking
@@ -316,7 +281,7 @@ Please keep the project JavaScript-only, follow existing architecture patterns, 
 - [ ] Keyboard shortcuts
 - [ ] Advanced statistics dashboard
 - [ ] Google login & cloud sync
-- [ ] Public deployment
+- [x] Public deployment
 
 ---
 
@@ -337,7 +302,7 @@ Please keep the project JavaScript-only, follow existing architecture patterns, 
 
 ## ⭐ Show Your Support
 
-If Leetie helped your interview preparation, please [give it a star](https://github.com/amitjomy007/Leetie/stargazers).
+If you liked this project, please [give it a star](https://github.com/amitjomy007/Leetie/stargazers).
 
 It helps more people discover the project, grows the open-source community, and motivates future development.
 
