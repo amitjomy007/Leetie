@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Dark theme (default) ── */
+:root {
+  --bg: #080a0d;
+  --bg-card: #0d1117;
+  --bg-hover: #161b22;
+  --border: #21262d;
+  --border-bright: #30363d;
+  --text: #e6edf3;
+  --text-muted: #7d8590;
+  --text-dim: #484f58;
+  --accent: #f0883e;
+  --accent-dim: rgba(240, 136, 62, 0.12);
+  --green: #3fb950;
+  --green-dim: rgba(63, 185, 80, 0.14);
+  --yellow: #d29922;
+  --yellow-dim: rgba(210, 153, 34, 0.14);
+  --red: #f85149;
+  --red-dim: rgba(248, 81, 73, 0.14);
+  --blue: #58a6ff;
+  --blue-dim: rgba(88, 166, 255, 0.1);
+  --purple: #bc8cff;
+  --purple-dim: rgba(188, 140, 255, 0.12);
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg: #f6f8fa;
+  --bg-card: #ffffff;
+  --bg-hover: #eaf5ec;
+  --border: #d0d7de;
+  --border-bright: #b0bac4;
+  --text: #1c2128;
+  --text-muted: #57606a;
+  --text-dim: #9ba5b0;
+  --accent: #1a7f37;
+  --accent-dim: rgba(26, 127, 55, 0.1);
+  --green: #1a7f37;
+  --green-dim: rgba(26, 127, 55, 0.1);
+  --yellow: #9a6700;
+  --yellow-dim: rgba(154, 103, 0, 0.1);
+  --red: #cf222e;
+  --red-dim: rgba(207, 34, 46, 0.1);
+  --blue: #0969da;
+  --blue-dim: rgba(9, 105, 218, 0.08);
+  --purple: #8250df;
+  --purple-dim: rgba(130, 80, 223, 0.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scrollbar-color: var(--border-bright) transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.font-display { font-family: 'Syne', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+
+input, textarea, button, select { font-family: inherit; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in { animation: fade-in 0.2s ease forwards; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 0.3s ease forwards; }
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.spin-slow { animation: spin-slow 1s linear infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.55; }
+}
+.pulse { animation: pulse-glow 2s ease-in-out infinite; }
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.cursor { animation: blink-cursor 1s step-end infinite; }

@@ -1,0 +1,5 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Top K Frequent Words,100.0,0.592771260185311,https://leetcode.com/problems/top-k-frequent-words,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting"
+MEDIUM,Top K Frequent Elements,92.0,0.6456596965737327,https://leetcode.com/problems/top-k-frequent-elements,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect"
+MEDIUM,Maximum Product Subarray,92.0,0.34941614794619197,https://leetcode.com/problems/maximum-product-subarray,"Array, Dynamic Programming"
+EASY,Split the Array,80.8,0.5922734052667847,https://leetcode.com/problems/split-the-array,"Array, Hash Table, Counting"

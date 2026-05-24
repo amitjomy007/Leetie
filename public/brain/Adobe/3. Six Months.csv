@@ -1,0 +1,3 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Top K Frequent Words,100.0,0.59,https://leetcode.com/problems/top-k-frequent-words,"Array, Hash Table"
+HARD,Median of Two Sorted Arrays,88.0,0.39,https://leetcode.com/problems/median-of-two-sorted-arrays,"Array, Binary Search, Divide and Conquer"

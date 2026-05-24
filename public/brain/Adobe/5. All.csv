@@ -1,0 +1,7 @@
+Difficulty,Title,Frequency,Acceptance Rate,Link,Topics
+MEDIUM,Top K Frequent Words,100.0,0.59,https://leetcode.com/problems/top-k-frequent-words,"Array, Hash Table"
+MEDIUM,Top K Frequent Elements,92.0,0.64,https://leetcode.com/problems/top-k-frequent-elements,"Array, Hash Table"
+MEDIUM,Maximum Product Subarray,92.0,0.34,https://leetcode.com/problems/maximum-product-subarray,"Array, Dynamic Programming"
+EASY,Split the Array,80.8,0.59,https://leetcode.com/problems/split-the-array,"Array, Hash Table, Counting"
+HARD,Trapping Rain Water,95.0,0.60,https://leetcode.com/problems/trapping-rain-water,"Array, Two Pointers"
+MEDIUM,Longest Substring Without Repeating Characters,90.0,0.34,https://leetcode.com/problems/longest-substring-without-repeating-characters,"Hash Table, String, Sliding Window"
